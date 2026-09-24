@@ -52,6 +52,21 @@ export const Security: React.FC = () => {
               subtitle="Segurança não é uma camada adicionada no fim. Ela orienta decisões de arquitetura, acesso, dados, infraestrutura e evolução do produto."
             />
 
+            <figure data-reveal="up" className="group relative mb-5 h-44 overflow-hidden rounded-2xl border border-faber-bg-borderLight/70 bg-faber-bg-surface shadow-xl sm:h-48">
+              <img
+                src="/assets/images/secure-infrastructure.webp"
+                alt="Especialista inspecionando infraestrutura segura em um data center"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                width="1440"
+                height="960"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#060B1A]/90 via-[#060B1A]/35 to-transparent" aria-hidden="true" />
+              <figcaption className="absolute bottom-4 left-4 max-w-[230px] text-sm font-medium leading-snug text-white sm:bottom-5 sm:left-5">
+                Infraestrutura acompanhada por pessoas, processos e tecnologia.
+              </figcaption>
+            </figure>
+
             <div className="grid gap-4 sm:grid-cols-3">
               {safeguards.map(({ icon: Icon, title, description }, index) => (
                 <article
