@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Navegação Principal">
+            <nav className="hidden xl:flex items-center gap-1 2xl:gap-2" aria-label="Navegação Principal">
               {navigationLinks.map((link) => (
                 <a
                   key={link.label}
@@ -73,7 +73,7 @@ export const Header: React.FC = () => {
             </nav>
 
             {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden xl:flex items-center gap-4">
               <div className="hidden xl:flex items-center gap-2 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-2.5 py-1 rounded-full">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span>Operação Ativa</span>
@@ -90,7 +90,7 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="flex items-center gap-2 lg:hidden">
+            <div className="flex items-center gap-2 xl:hidden">
               <a
                 href="#contato"
                 className="text-xs font-semibold px-3 py-1.5 bg-faber-blue hover:bg-faber-blue-denim text-white rounded-md transition-colors"
@@ -116,7 +116,7 @@ export const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 lg:hidden bg-[#060B1A]/95 backdrop-blur-xl pt-24 px-6 pb-8 flex flex-col justify-between overflow-y-auto animate-in fade-in duration-200"
+          className="fixed inset-0 z-40 xl:hidden bg-[#060B1A]/95 backdrop-blur-xl pt-24 px-6 pb-8 flex flex-col justify-between overflow-y-auto animate-in fade-in duration-200"
           role="dialog"
           aria-modal="true"
           aria-label="Menu móvel"

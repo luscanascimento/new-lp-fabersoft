@@ -8,6 +8,7 @@ export const navigationLinks: NavLink[] = [
   { label: 'Soluções', href: '#solucoes' },
   { label: 'LeanTrack', href: '#leantrack', badge: 'Indústria' },
   { label: 'IA', href: '#ia' },
+  { label: 'Segurança', href: '#seguranca' },
   { label: 'Mensura', href: '#mensura' },
   { label: 'Processo', href: '#processo' },
   { label: 'Tecnologias', href: '#tecnologias' },

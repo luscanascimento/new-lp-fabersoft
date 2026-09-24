@@ -20,7 +20,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   const isCenter = align === 'center';
 
   return (
-    <div className={`mb-12 md:mb-16 ${isCenter ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'} ${className}`}>
+    <div data-reveal="up" className={`mb-12 md:mb-16 ${isCenter ? 'text-center mx-auto max-w-3xl' : 'max-w-3xl'} ${className}`}>
       <div className={`inline-flex items-center gap-2 mb-3 ${isCenter ? 'justify-center' : ''}`}>
         <span 
           className={`h-px w-6 ${eyebrowColor === 'gold' ? 'bg-faber-gold' : 'bg-faber-blue-royal'}`} 

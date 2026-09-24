@@ -11,15 +11,16 @@ import { Engineering } from './components/sections/Engineering';
 import { SoftwareProduction } from './components/sections/SoftwareProduction';
 import { CTA } from './components/sections/CTA';
 import { Footer } from './components/sections/Footer';
-import { CodeStreamsBackground } from './components/ui/CodeStreamsBackground';
+import { Security } from './components/sections/Security';
 import { useLenis } from './hooks/useLenis';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 function App() {
   useLenis();
+  useScrollReveal();
 
   return (
     <div className="min-h-screen flex flex-col bg-faber-bg-base font-poppins selection:bg-faber-blue selection:text-white text-[#FAFAFA] overflow-x-hidden relative">
-      <CodeStreamsBackground />
       <Header />
       <main className="flex-1 w-full overflow-hidden relative z-10">
         <Hero />
@@ -27,6 +28,7 @@ function App() {
         <Solutions />
         <LeanTrack />
         <AI />
+        <Security />
         <Mensura />
         <Process />
         <Engineering />

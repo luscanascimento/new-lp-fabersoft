@@ -9,7 +9,7 @@ export const LeanTrack: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div data-reveal="left">
             <SectionHeading 
               eyebrow="Produto FaberSoft"
               eyebrowColor="gold"
@@ -44,7 +44,7 @@ export const LeanTrack: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative mt-8 lg:mt-0">
+          <div data-reveal="right" className="relative mt-8 lg:mt-0">
             {/* The Dashboard Image with a sleek presentation */}
             <div className="relative rounded-2xl overflow-hidden border border-faber-bg-border/80 shadow-2xl bg-black group transform transition-transform duration-500 hover:scale-[1.02]">
               <div className="absolute inset-0 bg-gradient-to-t from-[#060B1A] via-transparent to-transparent opacity-80 z-10 pointer-events-none" />

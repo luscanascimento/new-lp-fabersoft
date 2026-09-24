@@ -16,7 +16,7 @@ export const Engineering: React.FC = () => {
           subtitle="Escolhemos tecnologia de acordo com contexto, performance, segurança, escalabilidade, manutenção e custo de evolução."
         />
         
-        <div className="mt-12 relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl bg-[#0B1226] text-left">
+        <div data-reveal="up" className="mt-12 relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl bg-[#0B1226] text-left">
            <div className="flex items-center gap-2 px-4 py-2 border-b border-faber-bg-border bg-black/50">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500/80"></div>

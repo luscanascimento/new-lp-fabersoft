@@ -15,6 +15,13 @@ export function useTypewriter(htmlString: string, speed: number = 30, delay: num
       return;
     }
 
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setDisplayedText(htmlString);
+      setIsTyping(false);
+      setIsComplete(true);
+      return;
+    }
+
     // Parse HTML string into tokens: tags and text characters
     const tokens: string[] = [];
     let i = 0;

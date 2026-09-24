@@ -43,7 +43,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          <div className="order-2 lg:order-1 relative" id="ai-terminal">
+          <div className="order-2 lg:order-1 relative" id="ai-terminal" data-reveal="left">
             <div className="relative rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl shadow-faber-blue/5 bg-[#0B1226]">
               <div className="flex justify-between items-center px-4 py-2 border-b border-faber-bg-border bg-black/40">
                  <div className="flex gap-2">
@@ -71,7 +71,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2" data-reveal="right">
             <SectionHeading 
               eyebrow="Inteligência artificial aplicada"
               title={<>IA que sai da apresentação e entra na operação.</>}

@@ -25,7 +25,12 @@ export const Process: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {steps.map((step, idx) => (
-              <div key={idx} className="relative z-10 flex flex-col md:items-center md:text-center group">
+              <div
+                key={idx}
+                data-reveal="up"
+                style={{ transitionDelay: `${idx * 90}ms` }}
+                className="relative z-10 flex flex-col md:items-center md:text-center group"
+              >
                 <div className="w-12 h-12 rounded-full bg-[#0B1226] border border-faber-bg-border flex items-center justify-center text-faber-gold font-mono font-bold mb-4 group-hover:border-faber-gold transition-colors">
                   {step.num}
                 </div>

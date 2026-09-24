@@ -87,6 +87,7 @@ architecture.<span class="text-cyan-400">deploy</span>().<span class="text-cyan-
             {pillars.map((pillar) => (
               <div 
                 key={pillar.id}
+                data-reveal="up"
                 className="group p-6 sm:p-8 rounded-2xl bg-faber-bg-surface/50 border border-faber-bg-border hover:bg-[#0F1A36] hover:border-faber-blue-royal/50 transition-all duration-300 relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-faber-blue-royal/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

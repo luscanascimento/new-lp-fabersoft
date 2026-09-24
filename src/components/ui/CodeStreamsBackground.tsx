@@ -30,6 +30,7 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
     let width = 0;
     let height = 0;
     let dpr = 1;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // FaberSoft brand colors for code highlighting
     const COLORS = {
@@ -176,7 +177,7 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
       columns = [];
 
       for (let c = 0; c < numCols; c++) {
-        const initialTypedLines = 65 + c * 15;
+        const initialTypedLines = 6 + c * 4;
         let initialChars = 0;
         for (let i = 0; i < initialTypedLines; i++) {
           initialChars += templateLengths[i % templateLengths.length];
@@ -201,6 +202,7 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
 
     const render = (now: number) => {
       if (!isVisible) {
+        lastTime = now;
         animId = requestAnimationFrame(render);
         return;
       }
@@ -214,9 +216,9 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
       const font = '13px "Fira Code", ui-monospace, SFMono-Regular, monospace';
 
       columns.forEach((col) => {
-        col.scrollY += delta * col.driftSpeed;
+        if (!reduceMotion) col.scrollY += delta * col.driftSpeed;
 
-        if (now - col.lastTypeTime > col.typeSpeedMs) {
+        if (!reduceMotion && now - col.lastTypeTime > col.typeSpeedMs) {
           col.lastTypeTime = now;
           col.typedGlobalChar += 1;
         }
@@ -289,7 +291,7 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
         }
       });
 
-      animId = requestAnimationFrame(render);
+      if (!reduceMotion) animId = requestAnimationFrame(render);
     };
 
     animId = requestAnimationFrame(render);

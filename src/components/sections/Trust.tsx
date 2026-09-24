@@ -29,7 +29,7 @@ export const Trust: React.FC = () => {
         </p>
 
         {/* Google Reviews Badge */}
-        <div className="flex justify-center mt-8">
+        <div data-reveal="up" className="flex justify-center mt-8">
           <a 
             href="https://www.google.com/search?q=Fabersoft+Tecnologia" 
             target="_blank" 

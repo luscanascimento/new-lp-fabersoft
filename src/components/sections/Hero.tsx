@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../ui/Button';
 import { ArrowRight, Terminal, Cpu, Database, Activity, CheckCircle2, Layers } from 'lucide-react';
+import { CodeStreamsBackground } from '../ui/CodeStreamsBackground';
 
 export const Hero: React.FC = () => {
   const [activeCycle, setActiveCycle] = useState(0);
@@ -23,8 +24,10 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-[#060B1A]" id="hero">
+      <CodeStreamsBackground className="opacity-70" />
       {/* Background Ambience Layers */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 hero-code-vignette pointer-events-none" aria-hidden="true" />
       
       {/* Radial Glows */}
       <div 
@@ -36,11 +39,11 @@ export const Hero: React.FC = () => {
         aria-hidden="true" 
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Narrative & Positioning */}
-          <div className="lg:col-span-7 space-y-6 text-left">
+          <div className="lg:col-span-7 space-y-6 text-left" data-reveal="left">
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-faber-bg-surface/90 border border-faber-bg-border text-xs sm:text-sm font-medium text-gray-300">
               <span className="w-2 h-2 rounded-full bg-faber-gold animate-pulse" />
@@ -136,7 +139,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right Column: Live Operational Telemetry & System Engineering Architecture */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative" data-reveal="right" style={{ transitionDelay: '140ms' }}>
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
               {/* Terminal Frame */}

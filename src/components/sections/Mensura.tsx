@@ -50,7 +50,7 @@ export const Mensura: React.FC = () => {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Data Flow Interface */}
-          <div className="order-2 lg:order-1 relative group" id="mensura-terminal">
+          <div className="order-2 lg:order-1 relative group" id="mensura-terminal" data-reveal="left">
             <div className="rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl bg-[#060B1A]">
               <div className="flex items-center gap-2 px-4 py-2 border-b border-faber-bg-border bg-black/50">
                 <div className="text-[10px] font-mono text-gray-500">mensura_data_pipeline.json</div>
@@ -87,7 +87,7 @@ export const Mensura: React.FC = () => {
           </div>
 
           {/* Flow Side */}
-          <div className="order-1 lg:order-2 space-y-8">
+          <div className="order-1 lg:order-2 space-y-8" data-reveal="right">
             <div className="bg-[#060B1A] rounded-xl p-8 border border-faber-bg-border">
               <h3 className="text-xl font-bold text-white mb-6">Nenhum campo é digitado de novo.</h3>
               

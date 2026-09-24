@@ -21,7 +21,7 @@ export const CTA: React.FC = () => {
 
       <div className="absolute inset-0 bg-gradient-to-t from-[#060B1A] via-[#060B1A]/80 to-transparent" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div data-reveal="up" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white font-lato mb-6">
           Seu problema não precisa caber em um software pronto.
         </h2>
