@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-[#060B1A]" id="hero">
-      <CodeStreamsBackground className="opacity-70" />
+      <CodeStreamsBackground className="opacity-100" />
       {/* Background Ambience Layers */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
       <div className="absolute inset-0 hero-code-vignette pointer-events-none" aria-hidden="true" />
@@ -141,26 +141,20 @@ export const Hero: React.FC = () => {
           {/* Right Column: Live Operational Telemetry & System Engineering Architecture */}
           <div className="lg:col-span-5 relative" data-reveal="right" style={{ transitionDelay: '140ms' }}>
             <div className="relative mx-auto min-h-[640px] max-w-lg lg:max-w-none">
-              <figure className="absolute inset-0 overflow-hidden rounded-2xl border border-faber-bg-borderLight/70 bg-faber-bg-surface shadow-2xl shadow-black/50">
-                <img
-                  src="/assets/images/engineering-factory.webp"
-                  alt="Engenheiro de software trabalhando conectado a uma operação industrial"
-                  className="h-full w-full object-cover object-center"
-                  width="1100"
-                  height="1375"
-                  loading="eager"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#060B1A]/5 via-[#060B1A]/20 to-[#060B1A]" aria-hidden="true" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#060B1A]/10 to-transparent" aria-hidden="true" />
-                <figcaption className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-white/10 bg-[#060B1A]/75 px-3 py-1.5 text-[10px] font-medium text-gray-200 shadow-lg backdrop-blur-md sm:left-5 sm:top-5">
-                  <span className="h-1.5 w-1.5 rounded-full bg-faber-gold" />
-                  Engenharia conectada à operação real
-                </figcaption>
-              </figure>
+              <div className="hero-code-stage absolute inset-0 overflow-hidden rounded-2xl border border-faber-bg-borderLight/70 bg-[#050A16]/20 shadow-2xl shadow-black/50" aria-hidden="true">
+                <div className="flex h-11 items-center justify-between border-b border-faber-bg-border/70 bg-[#060B1A]/45 px-4 font-mono text-[9px] uppercase tracking-[0.16em] text-gray-500">
+                  <span>src / production / orchestrator.ts</span>
+                  <span className="flex items-center gap-2 text-faber-blue-light/70">
+                    <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-faber-blue-royal" />
+                    digitando
+                  </span>
+                </div>
+                <div className="hero-code-scan" />
+              </div>
 
               {/* Terminal Frame */}
-              <div className="relative z-10 ml-3 pt-36 sm:ml-9 sm:pt-40">
-              <div className="rounded-xl border border-faber-bg-borderLight/80 bg-[#070D1C]/95 p-4 shadow-2xl shadow-black/70 backdrop-blur-xl sm:p-5">
+              <div className="relative z-10 ml-5 pt-24 sm:ml-12 sm:pt-28">
+              <div className="rounded-xl border border-faber-bg-borderLight/80 bg-[#070D1C]/75 p-4 shadow-2xl shadow-black/70 sm:p-5">
                 {/* Header bar */}
                 <div className="flex items-center justify-between pb-3 mb-4 border-b border-faber-bg-border">
                   <div className="flex items-center gap-2">
@@ -182,7 +176,7 @@ export const Hero: React.FC = () => {
                 <div className="space-y-3 font-mono text-xs">
                   
                   {/* Status Banner */}
-                  <div className="bg-faber-bg-card/80 p-3 rounded-lg border border-faber-bg-border">
+                  <div className="bg-faber-bg-card/65 p-3 rounded-lg border border-faber-bg-border">
                     <div className="flex justify-between items-center text-gray-400 text-[11px] mb-1">
                       <span>MONITORAMENTO ATIVO</span>
                       <span className="text-faber-blue-royal">SJC-SP • DC-LATAM</span>
@@ -195,7 +189,7 @@ export const Hero: React.FC = () => {
 
                   {/* Telemetry Grid */}
                   <div className="grid grid-cols-2 gap-2.5">
-                    <div className="bg-faber-bg-surface p-2.5 rounded-md border border-faber-bg-border/60">
+                    <div className="bg-faber-bg-surface/75 p-2.5 rounded-md border border-faber-bg-border/60">
                       <div className="text-[10px] text-gray-400 flex items-center gap-1">
                         <Activity className="w-3 h-3 text-cyan-400" />
                         <span>EVENTOS / DIA</span>
@@ -206,7 +200,7 @@ export const Hero: React.FC = () => {
                       <div className="text-[10px] text-emerald-400 mt-0.5">Sem filas reprimidas</div>
                     </div>
 
-                    <div className="bg-faber-bg-surface p-2.5 rounded-md border border-faber-bg-border/60">
+                    <div className="bg-faber-bg-surface/75 p-2.5 rounded-md border border-faber-bg-border/60">
                       <div className="text-[10px] text-gray-400 flex items-center gap-1">
                         <Cpu className="w-3 h-3 text-faber-gold" />
                         <span>MÉDIA OEE (MES)</span>
@@ -219,7 +213,7 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Active Pipelines */}
-                  <div className="bg-faber-bg-surface/90 p-3 rounded-lg border border-faber-bg-border/70 space-y-2">
+                  <div className="bg-faber-bg-surface/75 p-3 rounded-lg border border-faber-bg-border/70 space-y-2">
                     <div className="text-[11px] font-semibold text-gray-300 flex items-center justify-between">
                       <span className="flex items-center gap-1.5">
                         <Database className="w-3.5 h-3.5 text-faber-blue-royal" />

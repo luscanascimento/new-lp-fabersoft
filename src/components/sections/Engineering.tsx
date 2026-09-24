@@ -4,11 +4,11 @@ import { FloatingIcons } from '../ui/FloatingIcons';
 
 export const Engineering: React.FC = () => {
   return (
-    <section className="py-24 bg-faber-bg-base relative overflow-hidden">
+    <section className="py-24 bg-faber-bg-base relative overflow-hidden" id="tecnologias">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-faber-blue-royal/5 blur-[120px] rounded-full pointer-events-none" />
       <FloatingIcons />
       
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <SectionHeading 
           eyebrow="Engenharia sem amarras"
           title="Não começamos pela tecnologia. Começamos pelo problema."
@@ -16,7 +16,28 @@ export const Engineering: React.FC = () => {
           subtitle="Escolhemos tecnologia de acordo com contexto, performance, segurança, escalabilidade, manutenção e custo de evolução."
         />
         
-        <div data-reveal="up" className="mt-12 relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl bg-[#0B1226] text-left">
+        <div className="mt-12 grid items-stretch gap-6 lg:grid-cols-[0.72fr_1.28fr]">
+          <figure data-reveal="left" className="group relative min-h-[360px] overflow-hidden rounded-xl border border-faber-bg-border shadow-2xl lg:min-h-[430px]">
+            <img
+              src="/assets/images/engineering-factory.webp"
+              alt="Engenheiro de software trabalhando conectado a uma operação industrial"
+              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+              width="1100"
+              height="1375"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#060B1A] via-[#060B1A]/10 to-transparent" aria-hidden="true" />
+            <figcaption className="absolute bottom-5 left-5 right-5 text-left">
+              <span className="mb-2 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#060B1A]/70 px-3 py-1 font-mono text-[9px] uppercase tracking-wider text-faber-gold backdrop-blur-md">
+                Operação real
+              </span>
+              <p className="max-w-xs text-sm font-medium leading-relaxed text-white">
+                Engenharia próxima de quem opera, produz e toma decisões.
+              </p>
+            </figcaption>
+          </figure>
+
+        <div data-reveal="right" className="relative w-full rounded-xl overflow-hidden border border-faber-bg-border shadow-2xl bg-[#0B1226] text-left">
            <div className="flex items-center gap-2 px-4 py-2 border-b border-faber-bg-border bg-black/50">
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
@@ -48,6 +69,7 @@ export const Engineering: React.FC = () => {
             <br/>
             {'}'}
           </div>
+        </div>
         </div>
       </div>
     </section>

@@ -56,7 +56,7 @@ export const Security: React.FC = () => {
               <img
                 src="/assets/images/secure-infrastructure.webp"
                 alt="Especialista inspecionando infraestrutura segura em um data center"
-                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                 width="1440"
                 height="960"
                 loading="lazy"

@@ -177,7 +177,9 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
       columns = [];
 
       for (let c = 0; c < numCols; c++) {
-        const initialTypedLines = 6 + c * 4;
+        // Start each stream at a different depth so the code fills the hero
+        // vertically while the active cursor remains visible further down.
+        const initialTypedLines = 18 + c * 5;
         let initialChars = 0;
         for (let i = 0; i < initialTypedLines; i++) {
           initialChars += templateLengths[i % templateLengths.length];
@@ -249,10 +251,10 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
             continue;
           }
 
-          // Subtle atmospheric opacity: lower base for background elegance
-          let alpha = 0.25;
-          if (y < 80) alpha = Math.max(0.05, y / 80) * 0.25;
-          if (y > height - 30) alpha = Math.max(0.1, (height - y) / 30) * 0.25;
+          // Higher contrast on the right side keeps the typing legible behind glass cards.
+          let alpha = 0.38;
+          if (y < 80) alpha = Math.max(0.05, y / 80) * 0.38;
+          if (y > height - 30) alpha = Math.max(0.1, (height - y) / 30) * 0.38;
 
           // 1. Line Number
           ctx.fillStyle = '#1E2D58';
@@ -318,7 +320,7 @@ export const CodeStreamsBackground: React.FC<{ className?: string }> = ({ classN
     <div className={`absolute inset-0 pointer-events-none overflow-hidden select-none z-0 ${className}`}>
       <canvas
         ref={canvasRef}
-        className="w-full h-full opacity-60 drop-shadow-[0_0_6px_rgba(36,72,188,0.15)]"
+        className="w-full h-full opacity-75 drop-shadow-[0_0_6px_rgba(36,72,188,0.18)]"
       />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#060B1A]/20 to-[#060B1A]/80 pointer-events-none" />
     </div>
