@@ -101,7 +101,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
 
             <div className="bg-[#0B1226] border border-faber-bg-border rounded-xl p-6 flex flex-col sm:flex-row items-center gap-6 justify-between hover:border-faber-blue/40 transition-colors">
               <div>
-                <img src="/assets/brand/radisa.svg" alt="Radisa" className="h-8 mb-2" />
+                <img src={`${import.meta.env.BASE_URL}assets/brand/radisa.svg`} alt="Radisa" className="h-8 mb-2" />
                 <p className="text-xs text-gray-400 max-w-[250px]">Conheça a Radisa, nossa empresa especializada em Inteligência Artificial para negócios reais.</p>
               </div>
               <Button 

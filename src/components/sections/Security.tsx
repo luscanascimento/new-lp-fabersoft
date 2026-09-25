@@ -54,7 +54,7 @@ export const Security: React.FC = () => {
 
             <figure data-reveal="up" className="group relative mb-5 h-44 overflow-hidden rounded-2xl border border-faber-bg-borderLight/70 bg-faber-bg-surface shadow-xl sm:h-48">
               <img
-                src="/assets/images/secure-infrastructure.webp"
+                src={`${import.meta.env.BASE_URL}assets/images/secure-infrastructure.webp`}
                 alt="Especialista inspecionando infraestrutura segura em um data center"
                 className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                 width="1440"

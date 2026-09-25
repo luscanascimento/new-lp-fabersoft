@@ -49,7 +49,7 @@ export const LeanTrack: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden border border-faber-bg-border/80 shadow-2xl bg-black group transform transition-transform duration-500 hover:scale-[1.02]">
               <div className="absolute inset-0 bg-gradient-to-t from-[#060B1A] via-transparent to-transparent opacity-80 z-10 pointer-events-none" />
               <img 
-                src="/assets/images/Dashboard - Fabersoft.png" 
+                src={`${import.meta.env.BASE_URL}assets/images/Dashboard - Fabersoft.png`} 
                 alt="Dashboard do LeanTrack" 
                 className="w-full h-auto object-cover opacity-80 mix-blend-screen transition-opacity duration-500 group-hover:opacity-100"
               />

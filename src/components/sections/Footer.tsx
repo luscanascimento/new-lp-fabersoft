@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
           <div className="lg:col-span-1">
-            <img src="/assets/brand/logo-horizontal-light.svg" alt="FaberSoft Tecnologia" className="h-8 mb-6" />
+            <img src={`${import.meta.env.BASE_URL}assets/brand/logo-horizontal-light.svg`} alt="FaberSoft Tecnologia" className="h-8 mb-6" />
             <p className="text-sm text-gray-400 leading-relaxed mb-6">
               Transformamos desafios complexos em software que gera resultado.
             </p>

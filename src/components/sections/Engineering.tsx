@@ -19,7 +19,7 @@ export const Engineering: React.FC = () => {
         <div className="mt-12 grid items-stretch gap-6 lg:grid-cols-[0.72fr_1.28fr]">
           <figure data-reveal="left" className="group relative min-h-[360px] overflow-hidden rounded-xl border border-faber-bg-border shadow-2xl lg:min-h-[430px]">
             <img
-              src="/assets/images/engineering-factory.webp"
+              src={`${import.meta.env.BASE_URL}assets/images/engineering-factory.webp`}
               alt="Engenheiro de software trabalhando conectado a uma operação industrial"
               className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025]"
               width="1100"

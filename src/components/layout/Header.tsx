@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
               aria-label="FaberSoft Tecnologia — Início"
             >
               <img
-                src="/assets/brand/logo-horizontal-light.svg"
+                src={`${import.meta.env.BASE_URL}assets/brand/logo-horizontal-light.svg`}
                 alt="FaberSoft Tecnologia"
                 className="h-8 sm:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
                 width="172"
