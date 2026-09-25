@@ -2,6 +2,7 @@ import React from 'react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { Code2, Network, BrainCircuit, MonitorSmartphone, Terminal } from 'lucide-react';
 import { TypedCode } from '../ui/TypedCode';
+import { SoftwareFactoryBackground } from '../ui/SoftwareFactoryBackground';
 
 export const Solutions: React.FC = () => {
   const pillars = [
@@ -50,6 +51,7 @@ architecture.<span class="text-cyan-400">deploy</span>().<span class="text-cyan-
   return (
     <section className="py-24 bg-faber-bg-base relative overflow-hidden" id="solucoes">
       <div className="absolute -left-[20%] top-[10%] w-[50%] h-[50%] bg-faber-blue/5 rounded-full blur-[120px] pointer-events-none" />
+      <SoftwareFactoryBackground />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-start">
