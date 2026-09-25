@@ -3,7 +3,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { TypedCode } from '../ui/TypedCode';
-import { Bot } from 'lucide-react';
+import { Bot, Sparkles, Brain, Code2, Rocket, Zap, Search, Moon, MessageSquareText } from 'lucide-react';
 
 import { AIConversationBackground } from '../ui/AIConversationBackground';
 
@@ -129,6 +129,38 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
                 </div>
               </Button>
             </div>
+
+            {/* Integrated Models */}
+            <div className="mt-8 pt-8 border-t border-faber-bg-border/60" data-reveal="up">
+              <p className="text-[10px] uppercase tracking-widest text-gray-500 mb-4 font-semibold">Integrado nativamente com os melhores modelos</p>
+              <div className="flex flex-wrap gap-2.5">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-emerald-400/30 transition-colors cursor-default">
+                  <MessageSquareText size={14} className="text-emerald-400" /> ChatGPT
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-blue-400/30 transition-colors cursor-default">
+                  <Sparkles size={14} className="text-blue-400" /> Gemini
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-amber-400/30 transition-colors cursor-default">
+                  <Brain size={14} className="text-amber-400" /> Claude
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-gray-300/30 transition-colors cursor-default">
+                  <Moon size={14} className="text-gray-300" /> Kimi
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-faber-blue-royal/30 transition-colors cursor-default">
+                  <Code2 size={14} className="text-faber-blue-royal" /> Cursor
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-cyan-400/30 transition-colors cursor-default">
+                  <Rocket size={14} className="text-cyan-400" /> Antigravity
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-red-400/30 transition-colors cursor-default">
+                  <Zap size={14} className="text-red-400" /> Grok
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-blue-500/30 transition-colors cursor-default">
+                  <Search size={14} className="text-blue-500" /> Deepseek
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
