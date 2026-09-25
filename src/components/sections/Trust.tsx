@@ -1,5 +1,5 @@
 import React from 'react';
-import { Handshake } from 'lucide-react';
+import { SideHandshakeIcon } from '../ui/Icons';
 
 export const Trust: React.FC = () => {
   const clients = [
@@ -19,8 +19,8 @@ export const Trust: React.FC = () => {
     <section className="py-16 md:py-20 border-b border-faber-bg-border bg-faber-bg-base relative overflow-hidden" id="confianca">
       
       {/* Background Handshake Icon */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.04] pointer-events-none z-0">
-        <Handshake size={800} className="text-faber-blue-royal" strokeWidth={1} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none z-0">
+        <SideHandshakeIcon size={800} className="text-faber-blue-royal" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center relative z-10">
