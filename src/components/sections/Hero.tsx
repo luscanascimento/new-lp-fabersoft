@@ -140,7 +140,7 @@ export const Hero: React.FC = () => {
 
           {/* Right Column: Live Operational Telemetry & System Engineering Architecture */}
           <div className="lg:col-span-5 relative" data-reveal="right" style={{ transitionDelay: '140ms' }}>
-            <div className="relative mx-auto min-h-[640px] max-w-lg lg:max-w-none">
+            <div className="relative mx-auto min-h-[640px] max-w-lg lg:max-w-none flex items-center justify-center p-4 sm:p-8">
               <div className="hero-code-stage absolute inset-0 overflow-hidden rounded-2xl border border-faber-bg-borderLight/70 bg-[#050A16]/20 shadow-2xl shadow-black/50" aria-hidden="true">
                 <div className="flex h-11 items-center justify-between border-b border-faber-bg-border/70 bg-[#060B1A]/45 px-4 font-mono text-[9px] uppercase tracking-[0.16em] text-gray-500">
                   <span>src / production / orchestrator.ts</span>
@@ -153,7 +153,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Terminal Frame */}
-              <div className="relative z-10 ml-5 pt-24 sm:ml-12 sm:pt-28">
+              <div className="relative z-10 w-full max-w-lg">
               <div className="rounded-xl border border-faber-bg-borderLight/80 bg-[#070D1C]/75 p-4 shadow-2xl shadow-black/70 sm:p-5">
                 {/* Header bar */}
                 <div className="flex items-center justify-between pb-3 mb-4 border-b border-faber-bg-border">
