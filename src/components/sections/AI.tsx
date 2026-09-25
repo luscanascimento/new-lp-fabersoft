@@ -6,7 +6,7 @@ import { TypedCode } from '../ui/TypedCode';
 import { Bot, Sparkles, Brain, Code2, Rocket, Zap, Search, Moon, MessageSquareText } from 'lucide-react';
 
 import { AIConversationBackground } from '../ui/AIConversationBackground';
-import { ClaudeIcon, GeminiIcon, KimiIcon, CursorIcon, DeepseekIcon, ChatGPTIcon, GrokIcon, AntigravityIcon } from '../ui/Icons';
+import { ClaudeIcon, GeminiIcon, KimiIcon, CursorIcon, ChatGPTIcon } from '../ui/Icons';
 
 export const AI: React.FC = () => {
   const [showOutput, setShowOutput] = useState(false);
@@ -150,15 +150,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
                 <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-faber-blue-royal/30 transition-colors cursor-default">
                   <CursorIcon size={14} className="text-faber-blue-royal" /> Cursor
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-cyan-400/30 transition-colors cursor-default">
-                  <AntigravityIcon size={14} className="text-cyan-400" /> Antigravity
-                </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-red-400/30 transition-colors cursor-default">
-                  <GrokIcon size={14} className="text-red-400" /> Grok
-                </div>
-                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-faber-bg-border/60 bg-black/20 text-gray-400 text-xs font-medium hover:border-blue-500/30 transition-colors cursor-default">
-                  <DeepseekIcon size={14} className="text-blue-500" /> Deepseek
-                </div>
+
               </div>
             </div>
 
