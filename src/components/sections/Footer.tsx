@@ -35,10 +35,10 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-4 font-lato uppercase tracking-wider text-xs">Contato</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li>Oregon Business Center, Aquarius</li>
+              <li>Centro Empresarial Aquarius By Helbor, Aquarius</li>
               <li>São José dos Campos, SP - Brasil</li>
               <li className="pt-2"><a href="mailto:contato@fabersoft.com.br" className="text-faber-gold hover:text-white transition-colors">contato@fabersoft.com.br</a></li>
-              <li><a href="tel:+551233023544" className="hover:text-white transition-colors">+55 12 3302-3544</a></li>
+              <li><a href="tel:+5512991732770" className="hover:text-white transition-colors">+55 12 99173-2770</a></li>
             </ul>
           </div>
 

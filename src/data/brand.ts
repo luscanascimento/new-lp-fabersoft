@@ -62,13 +62,13 @@ export const clientList: string[] = [
 ];
 
 export const contactDetails = {
-  phone: '+55 12 3302-3544',
+  phone: '+55 12 99173-2770',
   whatsapp: '+55 12 99147-0165',
   email: 'contato@fabersoft.com.br',
   support: 'suporte@fabersoft.com.br',
   address: {
     city: 'São José dos Campos, SP',
-    building: 'Oregon Business Center',
+    building: 'Centro Empresarial Aquarius By Helbor',
     neighborhood: 'Aquarius',
     country: 'Brasil'
   },
