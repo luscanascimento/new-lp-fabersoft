@@ -50,20 +50,22 @@ export const SoftwareFactoryBackground: React.FC = () => {
   );
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20 z-0">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.15] z-0">
        <div className="absolute top-0 right-0 w-[50%] h-[50%] bg-faber-blue-royal/5 blur-[120px]" />
        
-       <div className="relative w-full h-full max-w-7xl mx-auto flex flex-col justify-center">
+       <div className="relative w-full h-full max-w-7xl mx-auto flex flex-col justify-center origin-center scale-[2.5] md:scale-[3]">
           
           {/* Main Conveyor Track */}
-          <div className="absolute top-1/2 left-0 w-[200%] h-1 bg-faber-bg-border/60" />
-          <div className="absolute top-1/2 left-0 w-[200%] h-1 mt-1 bg-faber-bg-border/40" />
+          <div className="absolute top-1/2 left-[-50%] w-[300%] h-1 bg-faber-bg-border/60" />
+          <div className="absolute top-1/2 left-[-50%] w-[300%] h-1 mt-1 bg-faber-bg-border/40" />
 
           {/* Conveyor motion indicators */}
-          <div className="absolute top-1/2 left-0 w-[200%] h-0.5 mt-0.5 border-t-2 border-dashed border-faber-blue-royal/40 animate-marquee" />
+          <div className="absolute top-1/2 left-[-50%] w-[300%] h-0.5 mt-0.5 border-t-2 border-dashed border-faber-blue-royal/40 animate-marquee" />
 
           {/* Software "Products" moving on the belt */}
           <div className="absolute top-[calc(50%-45px)] flex w-max animate-marquee" style={{ animationDuration: '30s' }}>
+             <BeltItems />
+             <BeltItems />
              <BeltItems />
              <BeltItems />
           </div>
