@@ -5,6 +5,8 @@ import { Button } from '../ui/Button';
 import { TypedCode } from '../ui/TypedCode';
 import { Bot } from 'lucide-react';
 
+import { AIConversationBackground } from '../ui/AIConversationBackground';
+
 export const AI: React.FC = () => {
   const [showOutput, setShowOutput] = useState(false);
 
@@ -39,6 +41,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
   return (
     <section className="py-24 bg-[#060B1A] relative" id="ia">
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-faber-blue-royal/10 blur-[150px] pointer-events-none" />
+      <AIConversationBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -59,7 +62,7 @@ agent = rai.<span class="text-cyan-400">Agent</span>(<br/>
               </div>
             </div>
 
-            <div className={`absolute -bottom-6 -right-6 sm:bottom-4 sm:-right-4 bg-black/90 backdrop-blur-md border border-faber-bg-border rounded-lg p-4 w-4/5 shadow-2xl transition-all duration-1000 delay-500 ${showOutput ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className={`absolute -bottom-10 -right-6 sm:-bottom-6 sm:-right-6 bg-black/90 backdrop-blur-md border border-faber-bg-border rounded-lg p-4 w-4/5 shadow-2xl transition-all duration-1000 delay-500 ${showOutput ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="flex justify-between items-center mb-2">
                 <Badge variant="blue" dot>Output do Agente</Badge>
               </div>
